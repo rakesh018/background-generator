@@ -1,0 +1,61 @@
+/*One of the good practises always is to
+give margin and padding zero to all elements*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*By default, flex direction is row and alll elements will be
+    aligned on x-axis so we change flex direction to column*/
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #ff9ce3, #4ab3ff);
+    /*We want to center the div so it is cross-axis now*/
+    align-items: center;
+}
+
+
+/*For space between them, we added margin top to all of them*/
+
+.title {
+    font-size: 2em;
+    color: white;
+    /*Sometimes when we select both same colors,visibility of the title
+    may be affected, so we are giving it a background*/
+    background: rgba(0, 0, 0, 0.1);
+    padding: 7px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.inputs {
+    margin-top: 30px;
+}
+
+.css-output {
+    margin-top: 30px;
+    /*We give the same styling as title so if any colour similarities
+    happen, it should be visible*/
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 7px;
+    margin-top: 30px;
+}
+
+button {
+    margin-top: 35px;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+button:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: ease-in-out;
+}
